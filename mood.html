@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Mood</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow-lg p-4 w-75">
+            <h1 class="text-center mb-4">Select Your Mood</h1>
+
+            <!-- Mood Selection Section -->
+            <div class="row text-center mb-4">
+                <div class="col-3">
+                    <div class="card p-3 mood-option" id="happy" onclick="selectMood('Happy', this)">
+                        <p class="emoji">😊</p>
+                        <p>Happy</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card p-3 mood-option" id="sad" onclick="selectMood('Sad', this)">
+                        <p class="emoji">😢</p>
+                        <p>Sad</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card p-3 mood-option" id="sloth" onclick="selectMood('Sloth', this)">
+                        <p class="emoji">🦥</p>
+                        <p>Sloth</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card p-3 mood-option" id="anxious" onclick="selectMood('Anxious', this)">
+                        <p class="emoji">😟</p>
+                        <p>Anxious</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next Page Button -->
+            <a href="energy.html" id="nextPage" class="btn btn-primary btn-block mt-4" style="display:none;">Next</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
