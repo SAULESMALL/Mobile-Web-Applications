@@ -1,0 +1,100 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Fun cartoony font */
+    background-color: #fffaf0; /* Warm soft beige background */
+    color: #333333;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  h1 {
+    font-size: 2.3em;
+    color: #ff6f61; /* Fun coral for headings */
+    margin-top: 20px;
+    text-shadow: 2px 2px 0px #ffcccb;
+  }
+  
+  /* Section Titles */
+  h2, h3 {
+    font-size: 1.8em;
+    color: #333333;
+    margin: 10px 0;
+  }
+  
+  /* Ingredients and Tips List Styling */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px auto;
+    max-width: 300px;
+  }
+  
+  ul li {
+    background-color: #ffe9d6; /* Light orange for each list item */
+    border: 2px solid #ffcc99;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #555555;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Timer and Tips Section Styling */
+  #recipeTime {
+    font-size: 1.2em;
+    color: #6b6b6b;
+    margin: 15px 0;
+    font-weight: bold;
+  }
+  
+  /* Start Cooking Button Styling */
+  button#startCookingBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff6f61; /* Coral color */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button#startCookingBtn:hover {
+    background-color: #ff4d4d; /* Slightly darker coral */
+    transform: scale(1.05);
+  }
+  
+  button#startCookingBtn:active {
+    background-color: #ff1a1a; /* Even darker coral */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    ul li {
+      font-size: 0.9em;
+      padding: 6px 10px;
+    }
+  
+    button#startCookingBtn {
+      font-size: 1em;
+      padding: 10px 15px;
+    }
+  }
+  

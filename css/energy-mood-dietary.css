@@ -1,0 +1,219 @@
+/* General Styling for a Fun Cartoony Look */
+body {
+    font-family: 'Comic Sans MS', 'Poppins', Arial, sans-serif;
+    /* Playful font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffefd5, #b2f5ea);
+    /* Warm peach and light teal gradient */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#app {
+    width: 90%;
+    max-width: 400px;
+    padding: 1.5rem;
+    background: #fffde7;
+    /* Light butter yellow */
+    border: 4px solid #8ecae6;
+    /* Soft blue border */
+    border-radius: 30px;
+    /* Rounded edges */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fun Title */
+h1 {
+    font-size: 2.6rem;
+    color: #ff6700;
+    /* Vibrant orange */
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 0px #ffe1a8, 4px 4px 0px #ff8900;
+    /* Layered text shadow */
+    letter-spacing: 1.5px;
+}
+
+/* Options Section */
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the buttons */
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Colorful Buttons */
+button,
+.option {
+    width: 80%;
+    /* Stretch buttons slightly for better alignment */
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border: 2px solid #333;
+    /* Neutral border */
+    border-radius: 20px;
+    /* Rounded for a soft look */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 6px 0px rgba(0, 0, 0, 0.2);
+    /* Cartoonish shadow */
+    transform: translateY(0);
+    text-align: center;
+}
+
+/* Individual Button Colors */
+.options button:nth-child(1),
+.options .option:nth-child(1) {
+    background-color: #ffd166;
+    /* Bright yellow-orange */
+    color: #333;
+}
+
+.options button:nth-child(2),
+.options .option:nth-child(2) {
+    background-color: #06d6a0;
+    /* Vibrant teal */
+    color: #fff;
+}
+
+.options button:nth-child(3),
+.options .option:nth-child(3) {
+    background-color: #118ab2;
+    /* Bold blue */
+    color: #fff;
+}
+
+.options button:nth-child(4),
+.options .option:nth-child(4) {
+    background-color: #ef476f;
+    /* Soft red-pink */
+    color: #fff;
+}
+
+.options button:nth-child(5),
+.options .option:nth-child(5) {
+    background-color: #8338ec;
+    /* Bright purple */
+    color: #fff;
+}
+
+/* Button Hover Effects */
+button:hover,
+.option:hover {
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.4);
+    /* Shadow effect on hover */
+    transform: translateY(-5px);
+    /* Bouncy hover */
+}
+
+button:active,
+.option:active {
+    transform: translateY(3px);
+    /* Slight indent on click */
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* Decorative Cartoon Elements */
+#app::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 223, 136, 0.4);
+    /* Pastel yellow */
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+}
+
+#app::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(136, 193, 223, 0.3);
+    /* Pastel blue */
+    border-radius: 50%;
+    bottom: -40px;
+    right: -40px;
+    z-index: -1;
+}
+
+/* Divider Line */
+.divider {
+    height: 5px;
+    background: linear-gradient(to right, #ffd166, #06d6a0, #118ab2, #ef476f, #8338ec);
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button,
+    .option {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    .back-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 10px auto;
+        padding: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #ffffff; /* Text color */
+        background-color: #ff6f61; /* Coral Pink */
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 4px #d95b4f; /* Darker coral shadow */
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .back-button {
+        display: inline-block;
+        width: auto;
+        margin: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        font-weight: bold;
+        color: #333333; /* Neutral dark text */
+        background-color: #ffc107; /* Warm yellow for distinction */
+        border: 2px solid #e0a800; /* Slightly darker yellow border */
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.2s ease;
+      }
+      
+      .back-button:hover {
+        background-color: #e0a800; /* Darker yellow on hover */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      
+      .back-button:active {
+        background-color: #d39e00; /* Slightly darker when active */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+        
+}

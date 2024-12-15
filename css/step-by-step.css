@@ -1,0 +1,163 @@
+/* General Styling for a Fun Cartoony Look */
+body {
+    font-family: 'Comic Sans MS', 'Poppins', Arial, sans-serif; /* Playful font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffefd5, #b2f5ea); /* Warm peach and light teal gradient */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#app {
+    width: 90%;
+    max-width: 400px;
+    padding: 1.5rem;
+    background: #fffde7; /* Light butter yellow */
+    border: 4px solid #8ecae6; /* Soft blue border */
+    border-radius: 30px; /* Rounded edges */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fun Title */
+h1 {
+    font-size: 2.6rem;
+    color: #ff6700; /* Vibrant orange */
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 0px #ffe1a8, 4px 4px 0px #ff8900; /* Layered text shadow */
+    letter-spacing: 1.5px;
+}
+
+/* Step Text Styling */
+#step-text {
+    font-size: 1.3rem;
+    color: #444444;
+    margin-bottom: 1.5rem;
+    background-color: #ffefd5; /* Warm peach tone */
+    border: 3px solid #ffcba4; /* Deeper peach border */
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Timer Section */
+h2 {
+    font-size: 1.8rem;
+    color: #06d6a0; /* Vibrant teal for timer title */
+    margin: 1rem 0;
+}
+
+#timer-display {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background: #ffcccb; /* Light coral background */
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Buttons Section */
+button {
+    width: 80%;
+    max-width: 250px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 6px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin: 0.5rem 0; /* Add space between buttons */
+}
+
+/* Button Colors */
+#next-step-btn {
+    background-color: #ffd166; /* Yellow-Orange */
+    color: #333;
+}
+
+#start-timer {
+    background-color: #06d6a0; /* Vibrant teal */
+    color: #fff;
+}
+
+#stop-timer {
+    background-color: #ef476f; /* Soft red-pink */
+    color: #fff;
+}
+
+#restart-timer {
+    background-color: #8338ec; /* Bright purple */
+    color: #fff;
+}
+
+#reset-timer {
+    background-color: #118ab2; /* Bold blue */
+    color: #fff;
+}
+
+/* Button Hover Effects */
+button:hover {
+    transform: translateY(-5px); /* Bouncy hover effect */
+    box-shadow: 0 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(3px); /* Indent effect on click */
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Decorative Cartoon Elements */
+#app::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 223, 136, 0.4); /* Pastel yellow */
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+}
+
+#app::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(136, 193, 223, 0.3); /* Pastel blue */
+    border-radius: 50%;
+    bottom: -40px;
+    right: -40px;
+    z-index: -1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #step-text {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    #timer-display {
+        font-size: 1.5rem;
+    }
+}
