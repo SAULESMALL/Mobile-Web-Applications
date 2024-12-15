@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Energy Level</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Select Your Energy Level</h1>
+    <div id="energyOptions" class="options">
+      <button data-energy="low">🔋 Low</button>
+      <button data-energy="medium">⚡ Medium</button>
+      <button data-energy="high">🔥 High</button>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const energyButtons = document.querySelectorAll('#energyOptions button');
+
+      energyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const selectedEnergy = button.getAttribute('data-energy');
+          localStorage.setItem('selectedEnergy', selectedEnergy); // Save energy to localStorage
+          window.location.href = 'dietary.html'; // Redirect to dietary selection page
+        });
+      });
+    });
+  </script>
+</body>
+</html>

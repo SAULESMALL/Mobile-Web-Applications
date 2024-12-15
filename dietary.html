@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Dietary Preference</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Select Your Dietary Preference</h1>
+    <div id="dietaryOptions" class="options">
+      <button data-diet="vegan">🥦 Vegan</button>
+      <button data-diet="vegetarian">🥗 Vegetarian</button>
+      <button data-diet="none">🍗 No Preference</button>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dietaryButtons = document.querySelectorAll('#dietaryOptions button');
+
+      dietaryButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const selectedDiet = button.getAttribute('data-diet');
+          localStorage.setItem('selectedDiet', selectedDiet); // Save diet to localStorage
+          window.location.href = 'recipeSuggestions.html'; // Redirect to recipe suggestions page
+        });
+      });
+    });
+  </script>
+</body>
+</html>

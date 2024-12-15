@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Mood</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Select Your Mood</h1>
+    <div id="moodOptions" class="options">
+      <button data-mood="happy">😊 Happy</button>
+      <button data-mood="sad">😢 Sad</button>
+      <button data-mood="lazy">😴 Lazy</button>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const moodButtons = document.querySelectorAll('#moodOptions button');
+
+      moodButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const selectedMood = button.getAttribute('data-mood');
+          localStorage.setItem('selectedMood', selectedMood); // Save mood to localStorage
+          window.location.href = 'energy.html'; // Redirect to energy selection page
+        });
+      });
+    });
+  </script>
+</body>
+</html>
